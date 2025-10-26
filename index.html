@@ -45,15 +45,18 @@
                     <div class="links">
                         <a href="#projects">Featured projects</a>
                         <a href="#skills">See skills</a>
-                        <a class="download" href="#" download="Nathan_Brown_Resume.pdf">Download CV</a>
+                        <a class="download" href="https://nbrownbuilt.com/nbrown-cv.pdf" download="nbrown-cv.pdf">Download CV</a>
                     </div>
                 </div>
 
                 <aside class="card profile" aria-labelledby="profile-name">
-                    <div class="avatar" aria-hidden="true">NB</div>
+                    <picture>
+                        <source srcset="https://avatars.githubusercontent.com/u/240261863?v=4" type="image/webp">
+                        <img class="avatar" src="https://avatars.githubusercontent.com/u/240261863?v=4" alt="Nathan Brown Headshot">
+                    </picture>
                     <div id="profile-name" style="font-weight:700">Nathan Brown</div>
-                    <div class="meta">Front End Software Engineer — San Francisco, CA</div>
-                    <a class="download" href="mailto:you@example.com">Email</a>
+                    <div class="meta">Front End Software Engineer — Denver, CO</div>
+                    <a class="download" href="mailto:nbrown2020@outlook.com">Email</a>
                 </aside>
             </section>
 
@@ -115,9 +118,9 @@
 
                     <div>
                         <h3 style="margin-top:0">Other ways to reach</h3>
-                        <p style="color:var(--muted)">Email: <a href="mailto:you@example.com" style="color:var(--accent);text-decoration:none">you@example.com</a></p>
-                        <p style="color:var(--muted)">GitHub: <a href="#" style="color:var(--accent);text-decoration:none">github.com/username</a></p>
-                        <p style="color:var(--muted)">LinkedIn: <a href="#" style="color:var(--accent);text-decoration:none">linkedin.com/in/username</a></p>
+                        <p style="color:var(--muted)">Email: <a href="mailto:nbrown2020@outlook.com" style="color:var(--accent);text-decoration:none">nbrown2020@outlook.com</a></p>
+                        <p style="color:var(--muted)">GitHub: <a href="https://github.com/nbrown8472" target="_blank" style="color:var(--accent);text-decoration:none">github.com/nbrown8472</a></p>
+                        <p style="color:var(--muted)">LinkedIn: <a href="https://www.linkedin.com/in/nbrown8/" target="_blank" style="color:var(--accent);text-decoration:none">linkedin.com/in/nbrown8/</a></p>
                         <hr style="border:none;height:1px;background:rgba(255,255,255,0.03);margin:16px 0">
                         <p style="color:var(--muted);font-size:13px">Open to contract and full-time roles. Available for frontend, UI/UX-focused projects.</p>
                     </div>
@@ -143,7 +146,7 @@
             const subject = encodeURIComponent('Portfolio inquiry from ' + form.name.value.trim());
             const body = 'Name: ' + name + '%0D%0AEmail: ' + email + '%0D%0A%0D%0A' + message;
             // Attempt to open default mail client
-            window.location.href = `mailto:you@example.com?subject=${subject}&body=${body}`;
+            window.location.href = `mailto:nbrown2020@outlook.com?subject=${subject}&body=${body}`;
             // Optionally clear form after
             form.reset();
         }
